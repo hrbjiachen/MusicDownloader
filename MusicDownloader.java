@@ -1,3 +1,5 @@
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
 import org.jsoup.Connection;
 
 import org.jsoup.Jsoup;
@@ -14,12 +16,12 @@ import java.nio.channels.ReadableByteChannel;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MusicDownloader {
+public class MusicDownloader{
     private static final String SONG_URL = "http://music.163.com/song";
     private static final String DOWNLOADER_URL = "https://ouo.us/fm/163/";
-    public static final File SONG_DIR = new File("./song/");
+    public final File SONG_DIR = new File("./song/");
 
-    private static Connection get163Connection(String url) {
+    private Connection get163Connection(String url) {
         return Jsoup.connect(url)
                 .header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8")
                 .header("Accept-Encoding", "gzip, deflate, sdch")
@@ -35,7 +37,7 @@ public class MusicDownloader {
                 .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36");
     }
 
-    public static String getSongDownloadURL(String songID) throws IOException {
+    public String getSongDownloadURL(String songID) throws IOException {
         Element body = Jsoup.connect(DOWNLOADER_URL)
                 .data("id", songID)
                 .header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8")
@@ -65,7 +67,7 @@ public class MusicDownloader {
         }
     }
 
-    public static String getSongID(String fileURL) {
+    public String getSongID(String fileURL) {
         String songId = fileURL.trim();
         if (!songId.matches("^\\d*$")) {
             String tag = "song";
@@ -79,7 +81,7 @@ public class MusicDownloader {
     }
 
 
-    public static String getSongInfo(String fileURL) throws IOException, ElementNotFoundException {
+    public String getSongInfo(String fileURL) throws IOException, ElementNotFoundException {
 
         String songId = getSongID(fileURL);
 
@@ -98,7 +100,7 @@ public class MusicDownloader {
         return songArtist + "-" + songTitle;
     }
 
-    public static void downloadFile(String originURL, String fileURL, String saveDir)
+    public void downloadFile(String originURL, String fileURL, String saveDir)
             throws IOException, MalformedURLException {
         if (!SONG_DIR.exists())
             SONG_DIR.mkdir();
@@ -128,7 +130,7 @@ public class MusicDownloader {
         }
     }
 
-    public static String makeStringValidForWindowsFile(String str) {
+    public String makeStringValidForWindowsFile(String str) {
         return str
                 .replace(':', '：')
                 .replace('<', '＜')
@@ -140,26 +142,23 @@ public class MusicDownloader {
                 .replace('*', '＊');
     }
 
-    public static void run(String inputURL){
+    public void run(String inputURL) {
 
-        if(inputURL == null) {
+        if (inputURL.isEmpty()) {
             System.out.println("No input");
             return;
         }
         String songId = getSongID(inputURL);
-        System.out.println(songId);
-
         try {
             String url = getSongDownloadURL(songId);
             System.out.println(url);
             downloadFile(inputURL, url, "./song/");
-        }catch (MalformedURLException e) {
+        } catch (MalformedURLException e) {
             System.err.println("URL does not work\n");
-        }catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Unable to download");
         }
-
-
-
     }
+
+
 }

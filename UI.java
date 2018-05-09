@@ -12,13 +12,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import javafx.scene.control.ProgressBar;
+import javafx.scene.image.Image;
 
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class UI extends Application {
     private String songDir = "song/";
@@ -59,8 +60,7 @@ public class UI extends Application {
         container2.getChildren().add(urlInputField);
 
         //test progress bar
-        final Label barLabel = new Label("Files Transfer:");
-        final ProgressBar progressBar = new ProgressBar(0);
+         Label message = new Label("");
 
         //button1 in stack2
         Button btn1 = new Button();
@@ -68,33 +68,21 @@ public class UI extends Application {
         btn1.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String url = urlInputField.getText();
-                MusicDownloader.run(url);
-                Service service = new Service() {
-                    @Override
-                    protected Task createTask() {
-                        return new Task() {
-                            @Override
-                            protected Object call() throws Exception {
-                                for(int i=0; i<100; i++){
-                                    updateProgress(i, 100);
-                                    try {
-                                        Thread.sleep(10);
-                                    } catch (InterruptedException e) {
-                                        e.printStackTrace();
-                                    }
-                                }
-                                return null;
-                            }
-                        };
-                    }
-                };
 
-                progressBar.progressProperty().bind(service.progressProperty());
-                service.start();
-                /*
-                MusicDownloader.
-                 */
+                String url = urlInputField.getText().trim();
+
+                if (url.isEmpty()) {
+                    message.setText("No URL, Miao!");
+                    return;
+                }else if(!url.matches("^(https:\\/\\/music\\.)163.com/#/song\\?id=\\d{9}$")) {
+                    message.setText("URL Not Valid, Miao!");
+                    return;
+                }else{
+                    MusicDownloader m = new MusicDownloader();
+                    m.run(url);
+                    message.setText("Completed, Miao!");
+                }
+
             }
         });
         GridPane container3 = new GridPane();
@@ -128,7 +116,7 @@ public class UI extends Application {
         stack1.getChildren().add(container2);
         stack2.getChildren().add(container3);
         stack2.getChildren().add(container4);
-        stack3.getChildren().addAll(barLabel,progressBar);
+        stack3.getChildren().add(message);
 
         //add all stack to root
         root.getChildren().add(stack1);
@@ -139,6 +127,7 @@ public class UI extends Application {
         Scene scene = new Scene(root, 450, 200);
         scene.getStylesheets().add("css/material-fx-v0_3.css");
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image("image/damao.jpg"));
         primaryStage.show();
     }
 }
