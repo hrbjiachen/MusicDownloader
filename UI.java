@@ -1,6 +1,4 @@
 import javafx.application.Application;
-import javafx.concurrent.Service;
-import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -18,8 +16,6 @@ import javafx.scene.image.Image;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class UI extends Application {
     private String songDir = "song/";
