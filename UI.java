@@ -30,7 +30,7 @@ public class UI extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Damao Download");
+        primaryStage.setTitle("大毛偷歌");
 
         //root
         VBox root = new VBox();
@@ -54,7 +54,7 @@ public class UI extends Application {
 
         //textField in stack1
         TextField urlInputField = new TextField();
-        urlInputField.setPrefWidth(300);
+        urlInputField.setPrefWidth(400);
         GridPane container2 = new GridPane();
         container2.setPadding(new Insets(5, 25, 5, 10));
         container2.getChildren().add(urlInputField);
@@ -64,7 +64,8 @@ public class UI extends Application {
 
         //button1 in stack2
         Button btn1 = new Button();
-        btn1.setText("Download!");
+        btn1.setText("Download");
+        btn1.setPrefWidth(120);
         btn1.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -72,15 +73,20 @@ public class UI extends Application {
                 String url = urlInputField.getText().trim();
 
                 if (url.isEmpty()) {
-                    message.setText("No URL, Miao!");
+                    message.setText("没地址下毛？!");
                     return;
-                }else if(!url.matches("^(https:\\/\\/music\\.)163.com/#/song\\?id=\\d{9}$")) {
-                    message.setText("URL Not Valid, Miao!");
+                }else if(!url.matches("^(https:\\/\\/music\\.)163.com/#/song\\?id=\\d*$")) {
+                    message.setText("什么鬼地址!");
                     return;
-                }else{
+                } else {
                     MusicDownloader m = new MusicDownloader();
-                    m.run(url);
-                    message.setText("Completed, Miao!");
+                    try {
+                        if(m.downloadFile(url))
+                            message.setText("嗷嗷，下载好了!");
+                        else
+                            message.setText("失败了，我是一只废毛");
+                    } catch (IOException e) {}
+
                 }
 
             }
@@ -91,7 +97,8 @@ public class UI extends Application {
 
         //button2 in stack 2
         Button btn2 = new Button();
-        btn2.setText("Open Folder!");
+        btn2.setText("Open Folder");
+        btn2.setPrefWidth(120);
         btn2.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
@@ -110,12 +117,25 @@ public class UI extends Application {
         container4.setPadding(new Insets(5, 15, 5, 15));
         container4.getChildren().add(btn2);
 
+        //button2 in stack 2
+        Button btn3 = new Button();
+        btn3.setText("Clear");
+        btn3.setPrefWidth(120);
+        btn3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                message.setText("");
+                urlInputField.setText("");
+            }
+        });
+        GridPane container5 = new GridPane();
+        container5.setPadding(new Insets(5, 15, 5, 15));
+        container5.getChildren().add(btn3);
 
         //add all containers to stack
         stack1.getChildren().add(container1);
         stack1.getChildren().add(container2);
-        stack2.getChildren().add(container3);
-        stack2.getChildren().add(container4);
+        stack2.getChildren().addAll(container3,container4,container5);
         stack3.getChildren().add(message);
 
         //add all stack to root
@@ -124,10 +144,12 @@ public class UI extends Application {
         root.getChildren().add(stack3);
 
         //create scene
-        Scene scene = new Scene(root, 450, 200);
+        Scene scene = new Scene(root, 600, 200);
         scene.getStylesheets().add("css/material-fx-v0_3.css");
         primaryStage.setScene(scene);
         primaryStage.getIcons().add(new Image("image/damao.jpg"));
         primaryStage.show();
     }
+
+
 }

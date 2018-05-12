@@ -1,5 +1,3 @@
-import javafx.concurrent.Service;
-import javafx.concurrent.Task;
 import org.jsoup.Connection;
 
 import org.jsoup.Jsoup;
@@ -100,34 +98,41 @@ public class MusicDownloader{
         return songArtist + "-" + songTitle;
     }
 
-    public void downloadFile(String originURL, String fileURL, String saveDir)
+    public boolean downloadFile(String originURL)
             throws IOException, MalformedURLException {
         if (!SONG_DIR.exists())
             SONG_DIR.mkdir();
 
         ReadableByteChannel rbc = null;
         FileOutputStream fos = null;
-
+        String songInfo = "";
         try {
-            String songInfo = getSongInfo(originURL);
-            File file = new File(saveDir, songInfo + ".mp3");
-            URL website = new URL(fileURL);
+            String songID = getSongID(originURL);
+            String downloadURL = getSongDownloadURL(songID);
+            songInfo = getSongInfo(originURL);
+            File file = new File("./song/", songInfo + ".mp3");
+            URL website = new URL(downloadURL);
 
             rbc = Channels.newChannel(website.openStream());
             fos = new FileOutputStream(file);
             fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
         }catch (IOException e) {
-            System.err.println("Unable to download");
-            e.printStackTrace();
+            System.out.println("Resource Unavailable");
         }catch (Exception e) {
-            System.out.println("Error occurred!");
+            System.out.println("Error");
         }finally {
             try {
                 rbc.close();
                 fos.close();
             } catch (NullPointerException | IOException e) { }
-
         }
+
+        Boolean status = false;
+
+        if(new File("./song/",songInfo + ".mp3").exists() && !songInfo.isEmpty())
+            status = true;
+
+        return status;
     }
 
     public String makeStringValidForWindowsFile(String str) {
@@ -140,24 +145,6 @@ public class MusicDownloader{
                 .replace('\\', '｜')
                 .replace('?', '？')
                 .replace('*', '＊');
-    }
-
-    public void run(String inputURL) {
-
-        if (inputURL.isEmpty()) {
-            System.out.println("No input");
-            return;
-        }
-        String songId = getSongID(inputURL);
-        try {
-            String url = getSongDownloadURL(songId);
-            System.out.println(url);
-            downloadFile(inputURL, url, "./song/");
-        } catch (MalformedURLException e) {
-            System.err.println("URL does not work\n");
-        } catch (Exception e) {
-            System.out.println("Unable to download");
-        }
     }
 
 
