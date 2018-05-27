@@ -109,14 +109,16 @@ public class MusicDownloader{
         try {
             String songID = getSongID(originURL);
             String downloadURL = getSongDownloadURL(songID);
+            System.out.println(downloadURL);
             songInfo = getSongInfo(originURL);
             File file = new File("./song/", songInfo + ".mp3");
-            URL website = new URL(downloadURL);
+            URL website = new URL("http:"+ downloadURL);
 
             rbc = Channels.newChannel(website.openStream());
             fos = new FileOutputStream(file);
             fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
         }catch (IOException e) {
+            e.printStackTrace();
             System.out.println("Resource Unavailable");
         }catch (Exception e) {
             System.out.println("Error");

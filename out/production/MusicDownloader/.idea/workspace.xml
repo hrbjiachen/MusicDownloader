@@ -1,58 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="MusicDownloader:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f412e312-2f6b-437d-aab4-f0bdd8525725" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MusicDownloader_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MusicDownloader.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/.idea/libraries/jsoup_1_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/.idea/libraries/jsoup_1_11_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/MusicDownloader$ElementNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/MusicDownloader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/MusicDownloader.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/UI$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/UI$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/UI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/css/material-fx-v0_3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/image/damao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/javaFx.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MusicDownloader/jsoup-1.11.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/song/陈势安-再痛也没关系.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/javaFx_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f0146c76-c93f-4727-80fd-264b208cf741" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_31.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MusicDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/.idea/artifacts/javaFx_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/.idea/libraries/jsoup_1_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/MusicDownloader$ElementNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/MusicDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/UI$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/UI$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/UI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/css/material-fx-v0_3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/image/damao.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/javaFx.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/jsoup-1.11.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/song/冯提莫-佛系少女.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaFx/song/排骨教主-时之裂痕.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicDownloader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MusicDownloader.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,28 +16,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UI.java">
+    <leaf>
+      <file leaf-file-name="MusicDownloader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MusicDownloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="195">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicDownloader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MusicDownloader.java">
+      <file leaf-file-name="UI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-              <folding>
-                <element signature="method#get163Connection#0;class#MusicDownloader#0" />
-                <element signature="method#getSongDownloadURL#0;class#MusicDownloader#0" />
-                <element signature="class#ElementNotFoundException#0;class#MusicDownloader#0" />
-                <element signature="method#getSongID#0;class#MusicDownloader#0" />
-                <element signature="method#getSongInfo#0;class#MusicDownloader#0" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -93,14 +39,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/MusicDownloader.java" />
-        <option value="$PROJECT_DIR$/UI.java" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -111,21 +49,19 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="20" />
-    <option name="y" value="40" />
-    <option name="width" value="2696" />
-    <option name="height" value="1584" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="52" />
+    <option name="y" value="43" />
+    <option name="width" value="1218" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,16 +73,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -218,54 +150,49 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f412e312-2f6b-437d-aab4-f0bdd8525725" name="Default" comment="" />
-      <created>1525923117629</created>
+      <changelist id="f0146c76-c93f-4727-80fd-264b208cf741" name="Default" comment="" />
+      <created>1527398805777</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1525923117629</updated>
-      <workItem from="1525923124466" duration="43000" />
-      <workItem from="1525924790537" duration="5374000" />
-      <workItem from="1525930942119" duration="129000" />
-      <workItem from="1525931649427" duration="503000" />
-      <workItem from="1525932882667" duration="498000" />
+      <updated>1527398805777</updated>
+      <workItem from="1527398816599" duration="345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6547000" />
+    <option name="totallyTimeSpent" value="345000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="52" y="43" width="1218" height="737" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3015873" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936507" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1632653" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22193877" />
+      <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,164 +201,27 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MusicDownloader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-          <folding>
-            <element signature="method#get163Connection#0;class#MusicDownloader#0" />
-            <element signature="method#getSongDownloadURL#0;class#MusicDownloader#0" />
-            <element signature="class#ElementNotFoundException#0;class#MusicDownloader#0" />
-            <element signature="method#getSongID#0;class#MusicDownloader#0" />
-            <element signature="method#getSongInfo#0;class#MusicDownloader#0" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MusicDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-          <folding>
-            <element signature="method#get163Connection#0;class#MusicDownloader#0" />
-            <element signature="method#getSongDownloadURL#0;class#MusicDownloader#0" />
-            <element signature="class#ElementNotFoundException#0;class#MusicDownloader#0" />
-            <element signature="method#getSongID#0;class#MusicDownloader#0" />
-            <element signature="method#getSongInfo#0;class#MusicDownloader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="21" lean-forward="true" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MusicDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-          <folding>
-            <element signature="method#get163Connection#0;class#MusicDownloader#0" />
-            <element signature="method#getSongDownloadURL#0;class#MusicDownloader#0" />
-            <element signature="class#ElementNotFoundException#0;class#MusicDownloader#0" />
-            <element signature="method#getSongID#0;class#MusicDownloader#0" />
-            <element signature="method#getSongInfo#0;class#MusicDownloader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MusicDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-          <folding>
-            <element signature="method#get163Connection#0;class#MusicDownloader#0" />
-            <element signature="method#getSongDownloadURL#0;class#MusicDownloader#0" />
-            <element signature="class#ElementNotFoundException#0;class#MusicDownloader#0" />
-            <element signature="method#getSongID#0;class#MusicDownloader#0" />
-            <element signature="method#getSongInfo#0;class#MusicDownloader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="30">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>MusicDownloader:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
+      <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>MusicDownloader</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>jsoup-1.11.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
